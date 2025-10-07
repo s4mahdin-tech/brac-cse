@@ -1,0 +1,84 @@
+//task1
+
+public class Task {
+  public static void main (String [] args) {
+    int min = 3456789 ;
+    int minute_inDay=60*24;
+    int minute_inYear= minute_inDay*365;
+    
+    int year= min/minute_inYear;
+    int remainingMinute= min%minute_inYear;
+    int days = remainingMinute/minute_inDay;
+    
+    System.out.println(year + " years" +" " + days + " days");
+  }
+}
+
+//Task2
+
+public class Task {
+  public static void main (String [] args) {
+    int min = 3456789 ;
+    int a = 2;
+    int b = 5;
+    int c = 8;
+    
+    int d = ((2*b)*(c-a)/3)+7 ;
+    
+    System.out.println(d);
+    
+  }
+}
+
+//Task3
+
+public class Task {
+  public static void main (String [] args) {
+   
+    int ID= 23221454;
+    int a = ID%100;
+    int b = a/10;
+    int c = a%10;
+    int temp = b;
+    b = c;
+    c = temp ;
+    
+    System.out.println(b +"" + c);
+  }
+}
+
+Task4
+
+public class Task {
+  public static void main (String [] args) {
+   int a = 8;
+   int b = 3;
+   double side = Math.sqrt((a/2)*(a/2)+b*b);
+   
+   double circumference = side*6;
+   double area = ((3*Math.sqrt(3))/2)*side*side ;
+   
+    
+    System.out.println("Area: " + area + " " + " Circumference: " + circumference);
+  }
+}
+
+Task5
+
+public class Task {
+  public static void main (String [] args) {
+    double a = 4.5d ;
+    double b = 9.5d ;
+    double c = Math.sqrt(a*a+b*b);
+    
+    double sinA = a/c;
+    double cosA = b/c;
+    double sinB = b/c;
+    double cosB = a/c;
+    
+    System.out.println("sin(A): " +sinA );
+    System.out.println("cos(A): " +cosA );
+    System.out.println("sin(b): " +sinB );
+    System.out.println("cos(B): " +cosB );
+  }
+}
